@@ -1,0 +1,59 @@
+{% extends "basic.html" %}
+{% load static %}
+
+ 
+    {% block head %}
+   
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+
+<br>
+<div class="container mt-2 mb-3">
+<center><h2>Patient Profile</h2>
+</center><br>
+
+
+
+
+    <div class="row">
+        <div class="col" >
+
+            <div class="card" style="width:350px">
+                <img class="card-img-top" src="{% static 'homepage/patient.png' %}" alt="Card image" style="width:100%;">
+                <div class="card-body">
+                  <h4 class="card-title">Patient name : {{puser.patient.name}}</h4>
+                  <p class="card-text">Patient ID - {{puser.patient.user_id}}</p>
+                  <p class="card-text">Patient email - {{puser.email}}</p>
+                  <a href="{% url 'pviewprofile' puser.username %}" class="btn btn-primary">View Profile</a>
+                </div>
+              </div>
+
+        </div>
+
+
+        <div class="col" >
+               <div class="row">
+            
+               <a id="links" class="btn btn-outline-info btn-block" href="{% url 'checkdisease' %}">check disease </a><br>
+               </div>
+                
+               <div class="row">
+                <a class="btn btn-outline-info btn-block" href="{% url 'pconsultation_history' %}">view consulation history</a><br>
+                </div>
+
+               <div class="row">
+                <button class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#myModal-feedback">Give feedbacks </button><br>
+                </div>
+        </div>
+    </div>
+               
+
+
+  
+{% endblock %}
