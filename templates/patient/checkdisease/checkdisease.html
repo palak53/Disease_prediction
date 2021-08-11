@@ -279,7 +279,8 @@ $("#predict").click(function () {
                             <span class="diseasefield" >Patient name : {{ user.patient.name }}</span>
                             <span class="diseasefield" >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Age : {{ user.patient.age }} </span>
                     </div>
-                    <span class="diseasefield" >predicted disease is : </span><span class="diseasefield" id="diseasefield" style="color: #092700; text-shadow: 2px 2px 4px rgb(36, 255, 45);"></span> <br>
+                    <br>
+                    <span class="diseasefield" >predicted disease using Naive Bayes : </span><span class="diseasefield" id="diseasefield" style="color: #092700; text-shadow: 2px 2px 4px rgb(36, 255, 45);"></span> <br>
                     <br>
                     <span class="diseasefield">confidence score of :  </span>
                     <span>
@@ -287,7 +288,9 @@ $("#predict").click(function () {
                         <div id="percentage" class="progress-bar" style="width: 0%">0%
                         </div>
                     </div>
-                      <span class="diseasefield2" >predicted disease is : </span><span class="diseasefield2" id="diseasefield2" style="color: #092700; text-shadow: 2px 2px 4px rgb(36, 255, 45);"></span> <br>
+                      <br>
+                      <br>
+                      <span class="diseasefield2" >predicted disease using RandomForest : </span><span class="diseasefield2" id="diseasefield2" style="color: #092700; text-shadow: 2px 2px 4px rgb(36, 255, 45);"></span> <br>
                       <br>
                       <span class="diseasefield2">confidence score of :  </span>
                       <span>

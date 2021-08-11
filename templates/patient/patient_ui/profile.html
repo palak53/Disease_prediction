@@ -40,16 +40,18 @@
         <div class="col" >
                <div class="row">
             
-               <a id="links" class="btn btn-outline-info btn-block" href="{% url 'checkdisease' %}">check disease </a><br>
-               </div>
-                
-               <div class="row">
-                <a class="btn btn-outline-info btn-block" href="{% url 'pconsultation_history' %}">view consulation history</a><br>
-                </div>
-
-               <div class="row">
-                <button class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#myModal-feedback">Give feedbacks </button><br>
-                </div>
+                <div class= "col-lg-4 col-sm-6 col-xs-12">
+                    <div class= "hservice">
+                        <div class= "service-img" >
+                            <img class= "img-responsive center-block" src="{% static 'homepage/static/assets/img/service2.jpg' %}"   alt="Card image" style="width:400%;>
+                        </div>
+                        <div class= "service-description text-center">
+                           <!-- <h4 class= "service-heading">Symptom Check</h4>  -->
+                            <p>Enter your symtoms here.</p>
+                            <a href="{% url 'checkdisease' %}" class="rm-btn btn btn-primary">
+                                    Click Here! <i class="fa fa-caret-right"></i></a>
+                        </div>
+                    </div>
         </div>
     </div>
                
